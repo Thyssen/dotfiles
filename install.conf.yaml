@@ -1,15 +1,15 @@
-- clean: ['~']
+- clean: ['~', '~/.vim/autoload']
 
 - link:
-    ~/.zshrc: zshrc
+    ~/.zshrc:
+        force: true
+        path: zshrc
     ~/.vim/autoload/plug.vim:
-      create: true
-      path: vim-plug/plug.vim
+        create: true
+        path: vim-plug/plug.vim
     ~/.vimrc:
-      force: true
-      path: vimrc
+        force: true
+        path: vimrc
 
 - shell:
     - [git submodule update --init --recursive, Installing submodules]
-    - [zgen reset]
-    - [vim -c 'PlugInstall']
