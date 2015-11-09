@@ -8,6 +8,12 @@
 # load zgen
 source "${HOME}/.dotfiles/zgen/zgen.zsh"
 
+# Settings
+source ~/.zsh/settings.zsh
+
+# Aliases
+source ~/.zsh/aliases.zsh
+
 # check if there's no init script
 if ! zgen saved; then
     echo "Creating a zgen save"
@@ -25,11 +31,9 @@ if ! zgen saved; then
     zgen save
 fi
 
-# Enable completions
-autoload -U compinit && compinit
-
 # Enable autosuggestions automatically.
 zle-line-init() {
     zle autosuggest-start
 }
 zle -N zle-line-init
+

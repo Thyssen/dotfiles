@@ -1,6 +1,9 @@
 - clean: ['~', '~/.vim/autoload']
 
 - link:
+    ~/.zsh:
+        create: true
+        path: zsh/
     ~/.zshrc:
         force: true
         path: zshrc
