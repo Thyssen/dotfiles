@@ -15,9 +15,9 @@ if ! zgen saved; then
     # plugins
     zgen load mafredri/zsh-async
     zgen load sindresorhus/pure
-    zgen load zsh-users/zsh-completions
     zgen load zsh-users/zsh-syntax-highlighting
-    
+    zgen load zsh-users/zsh-completions
+
     # autosuggestions should be loaded last
     zgen load tarruda/zsh-autosuggestions
 
@@ -25,6 +25,8 @@ if ! zgen saved; then
     zgen save
 fi
 
+# Enable completions
+autoload -U compinit && compinit
 
 # Enable autosuggestions automatically.
 zle-line-init() {
