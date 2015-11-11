@@ -23,6 +23,7 @@
     ~/.vimrc:
         force: true
         path: vimrc
+    ~/.editorconfig: editorconfig
 
 - shell:
     - [git submodule update --init --recursive, Installing submodules]

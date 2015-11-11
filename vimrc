@@ -3,11 +3,12 @@
 
 call plug#begin('~/.vim/plugged')
 
-Plug 'etnadji/vim-epub'
-Plug 'hara/vim-opf'
-Plug 'scrooloose/nerdtree'
-Plug 'dkprice/vim-easygrep'
-Plug 'nathanaelkane/vim-indent-guides'
-Plug 'junegunn/goyo.vim'
+  Plug 'editorconfig/editorconfig-vim'
+  Plug 'etnadji/vim-epub'
+  Plug 'hara/vim-opf'
+  Plug 'scrooloose/nerdtree'
+  Plug 'dkprice/vim-easygrep'
+  Plug 'nathanaelkane/vim-indent-guides'
+  Plug 'junegunn/goyo.vim'
 
 call plug#end()
