@@ -7,6 +7,16 @@
     ~/.zshrc:
         force: true
         path: zshrc
+    ~/.zpreztorc:
+        force: true
+        path: zpreztorc
+    ~/.zprezto:
+        create: true
+        path: prezto/
+    ~/.zlogin: prezto/runcoms/zlogin
+    ~/.zlogout: prezto/runcoms/zlogout
+    ~/.zshenv: prezto/runcoms/zshenv
+    ~/.zprofile: prezto/runcoms/zprofile
     ~/.vim/autoload/plug.vim:
         create: true
         path: vim-plug/plug.vim
