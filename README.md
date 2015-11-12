@@ -1,6 +1,6 @@
 My dotfiles
 ===
-Tries to be as lightweight as possible while still be very easy to setup and configure on any OS.
+Tries to be lightweight, while still be very easy to setup and configure on any OS.
 
   - anishathalye/dotbot as base installer.
   - sorin-ionescu/prezto to configure zsh.
