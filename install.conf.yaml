@@ -1,15 +1,15 @@
 - clean: ['~', '~/.vim/autoload']
 
+- shell:
+    - [git submodule update --init --recursive, Installing submodules]
+
 - link:
-    ~/.zsh:
-        create: true
-        path: zsh/
     ~/.zshrc:
         force: true
-        path: zshrc
+        path: zsh/zshrc
     ~/.zpreztorc:
         force: true
-        path: zpreztorc
+        path: zsh/zpreztorc
     ~/.zprezto:
         create: true
         path: prezto/
@@ -24,6 +24,3 @@
         force: true
         path: vimrc
     ~/.editorconfig: editorconfig
-
-- shell:
-    - [git submodule update --init --recursive, Installing submodules]

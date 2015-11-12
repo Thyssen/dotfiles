@@ -10,11 +10,12 @@ if [[ -s "${ZDOTDIR:-$HOME}/.dotfiles/prezto/init.zsh" ]]; then
   source "${ZDOTDIR:-$HOME}/.dotfiles/prezto/init.zsh"
 fi
 
-# Settings
-# source ~/.zsh/settings.zsh
+# Source
+source "${ZDOTDIR:-$HOME}/.dotfiles/zsh/plugins/alias-tips/alias-tips.plugin.zsh"
 
-# Aliases
-# source ~/.zsh/aliases.zsh
+# Configure alias-tips
+export ZSH_PLUGINS_ALIAS_TIPS_TEXT="Du har et alias: "
+export ZSH_PLUGINS_ALIAS_TIPS_EXPAND=1
 
 # Enable autosuggestions automatically.
 # zle-line-init() {
