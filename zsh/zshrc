@@ -15,7 +15,6 @@ source "${ZDOTDIR:-$HOME}/.dotfiles/zsh/plugins/alias-tips/alias-tips.plugin.zsh
 
 # Configure alias-tips
 export ZSH_PLUGINS_ALIAS_TIPS_TEXT="Du har et alias: "
-export ZSH_PLUGINS_ALIAS_TIPS_EXPAND=1
 
 # Enable autosuggestions automatically.
 # zle-line-init() {
