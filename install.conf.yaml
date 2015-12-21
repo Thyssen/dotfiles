@@ -22,5 +22,5 @@
         path: vim-plug/plug.vim
     ~/.vimrc:
         force: true
-        path: vimrc
+        path: vim/vimrc
     ~/.editorconfig: editorconfig

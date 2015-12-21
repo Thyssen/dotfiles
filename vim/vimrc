@@ -1,0 +1,40 @@
+:hi! link FoldColumn Normal
+:set foldcolumn=3
+
+" IndentLine Settings
+let g:indentLine_enabled=0
+let g:indentLine_color_term = 239
+let g:indentLine_char = '︙'
+let g:indentLine_leadingSpaceEnabled=1
+" let g:indentLine_leadingSpaceChar = '.'
+
+call plug#begin('~/.vim/plugged')
+
+  " Sane defaults everywhere
+  Plug 'tpope/vim-sensible'
+  Plug 'editorconfig/editorconfig-vim'
+
+  " filebrowsing
+  Plug 'scrooloose/nerdtree'
+  Plug 'ctrlpvim/ctrlp.vim'
+
+  " Visual Theme
+  Plug 'Yggdroot/indentLine'
+
+  " Wiki editing
+  Plug 'kynan/dokuvimki-'
+
+  " EPUB editing
+  Plug 'etnadji/vim-epub'
+  Plug 'hara/vim-opf'
+  Plug 'dkprice/vim-easygrep'
+
+  " Distration free editing
+  Plug 'junegunn/goyo.vim'
+
+call plug#end()
+
+" Include DokuVimKi Configuration
+if filereadable($HOME."/.vim/dokuvimkirc")
+  source $HOME/.vim/dokuvimkirc
+endif
