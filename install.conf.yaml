@@ -17,6 +17,7 @@
     ~/.zlogout: prezto/runcoms/zlogout
     ~/.zshenv: prezto/runcoms/zshenv
     ~/.zprofile: prezto/runcoms/zprofile
+    ~/.gitconfig: gitconfig
     ~/.vim/autoload/plug.vim:
         create: true
         path: vim-plug/plug.vim
